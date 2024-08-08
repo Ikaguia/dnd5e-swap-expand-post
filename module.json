@@ -1,32 +1,39 @@
 {
-  "id": "module",
-  "title": "New Module",
-  "description": "",
+  "id": "dnd5e-swap-expand-post",
+  "title": "DND5E - Swap Expand and Post item",
+  "description": "Adds config to swap the buttons for expanding an item and posting it to chat",
   "version": "#{VERSION}#",
   "library": "false",
   "manifestPlusVersion": "1.2.0",
   "compatibility": {
     "minimum": 10,
-    "verified": 10,
-    "maximum": 11
+    "verified": 12,
+    "maximum": 12
   },
   "authors": [
     {
-      "name": "The League of Extraordinary FVTT Developers",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
+      "name": "Ikaguia",
+      "discord": "ikaguia"
     }
   ],
   "relationships": {
-    "systems": [],
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "3.0.0",
+          "verified": "3.3.1"
+        }
+      }
+    ],
     "requires": []
   },
   "esmodules": [
-    "scripts/module.js"
+    "scripts/module.mjs",
+    "scripts/lib/lib.mjs"
   ],
-  "scripts": [
-    "scripts/lib/lib.js"
-  ],
+  "scripts": [],
   "styles": [
     "styles/module.css"
   ],
@@ -42,10 +49,5 @@
   "download": "#{DOWNLOAD}#",
   "license": "LICENSE",
   "readme": "README.md",
-  "media": [
-    {
-      "type": "icon",
-      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
-    }
-  ]
+  "media": []
 }
